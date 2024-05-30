@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, black, #493240);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(45deg, black, #493240);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 0 black, 2px 2px 0 #004094, 3px 3px 0 #003072;
+    font-weight: bold;
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+.verified-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    animation: pulse 2s infinite;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    background: linear-gradient(45deg, blue, #493240);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    text-shadow: 1px 1px 0 #0056b3, 2px 2px 0 #004094, 3px 3px 0 #003072;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+}
+
+.link img {
+    margin-left: 10px;
+}
+
+.link:hover {
+    background: linear-gradient(45deg, red, black);
+}
+
+.link:active {
+    animation: click-animation 0.5s forwards;
+}
+
+/* Animation keyframes */
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation keyframes for shake */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+/* Animation keyframes for pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
